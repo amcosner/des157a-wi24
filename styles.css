@@ -1,3 +1,4 @@
+
 body {
     background-image: url(images/background.png);
 }
@@ -8,6 +9,7 @@ body {
     width: 1200px;
 }
 
+/* animation to make icons float */
 @keyframes starmovement {
     0% {
         transform: translate(0, 0px)
@@ -21,8 +23,10 @@ body {
 
 }
 
+/* page spacing */
 main {
     display: flex;
+    margin: auto;
     padding-left: 200px;
     padding-right: 100px;
 }
@@ -34,9 +38,26 @@ section {
 section img {
     padding-top: 40px;
     animation: starmovement 3.5s ease-in-out infinite; 
+    animation-delay: 1s; 
+}
+
+/* just in case I want to make each icon float at a different time */
+/* #column1 img{
+    animation: starmovement 3.5s ease-in-out infinite; 
     animation-delay: 1s;
 }
 
+#column2 img{
+    animation: starmovement 3.5s ease-in-out infinite; 
+    animation-delay: 2s;
+}
+
+#column3 img{
+    animation: starmovement 3.5s ease-in-out infinite; 
+    animation-delay: 3s;
+} */
+
+/* headings  */
 header {
     padding-top: 53px;
     text-align: center;
@@ -66,6 +87,7 @@ h2 {
     line-height: 10px;
 }
 
+/* main content of page */
 p {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
@@ -89,6 +111,8 @@ ul li a {
 ul li a:hover {
     color: #FEADFD;
 }
+
+/* footer */
 
 footer {
     text-align: center;
