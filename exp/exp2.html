@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        .blue { background-color: #A5C9FF;}
+        .sage {background-color:#A8C58B;}
+        .lilac {background-color:#E1BAFF;}
+        .cherry {background-color:#FFA7A7;}
+        .clementine {background-color:#FFB762;}
+        .yellow {background-color: #FFF6A8;}
+        .default {background-color: white;}
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <p>Please interact with this experiment through the console :D</p>
+
+    <!-- this experiment takes user input of a specific color and changes the background color according to their input -->
+    <script>
+        var userColor = prompt("Input one of the following colors: light blue, sage, lilac, cherry blossom, clementine, or pastel yellow","");
+        var lowerColor = userColor.toLowerCase();
+        colors = ['light blue','sage','lilac','cherry blossom','clementine','pastel yellow'];
+
+        // loop that runs through array and sees if user input matches. if it's a match, it will change the styling to fit the correct background color
+        for (var i=0; i<colors.length;i++){
+            // validation
+            if (lowerColor==""){
+                console.log("Please enter a valid color and restart!")
+            } else if(lowerColor == "light blue"){
+                var back=document.querySelector('body')
+                back.className = "blue";
+            } else if(lowerColor== "sage"){
+                var back=document.querySelector('body')
+                back.className = "sage";
+            } else if(lowerColor== "lilac"){
+                var back=document.querySelector('body')
+                back.className = "lilac";
+            } else if(lowerColor == "cherry"){
+                var back=document.querySelector('body')
+                back.className = "cherry"; 
+            } else if(lowerColor == "clementine"){
+                var back=document.querySelector('body')
+                back.className = "clementine";
+            } else if(lowerColor=="pastel yellow"){
+                var back=document.querySelector('body')
+                back.className = "yellow";
+            // validation
+            } else{
+                console.log("Please enter a valid color and restart!")
+            }
+        }
+    </script>
+</body>
+</html>
