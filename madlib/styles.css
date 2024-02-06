@@ -1,0 +1,111 @@
+body {
+    background-color: #232D41;
+}
+
+body .bones {
+    background-image: url(images/bones.png);
+    background-repeat:repeat;
+    margin:auto;
+    width: 1200px;
+    height:1126px;
+}
+
+#mouse {
+    background-image: url(images/mouse.png);
+    background-repeat: no-repeat;
+    background-size: 450px;
+    position:absolute;
+    background-position: 140px 360px;
+}
+
+#section1 p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400px;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-left: 420px;
+    margin-right: 420px;
+    font-size: 1em;
+}
+
+#section1 h3 {
+    font-family:'Darumadrop One', sans-serif;
+    font-weight: 400px;
+    font-size: 1.5em;
+    color: #89A0CD;
+    margin-left: 420px;
+    margin-right: 420px;
+    font-size: 1.3em;
+}
+
+h1 {
+    padding: 7px 33px 20px 33px;
+    font-family:'Darumadrop One', sans-serif;
+    font-size: 3.1em;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #89A0CD;
+    border: 5px solid #89A0CD;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 300px;
+    margin-right: 300px;
+    /* font-family: 'Dekko', cursive; */
+}
+
+h3 {
+    font-family:'Darumadrop One', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #89A0CD;
+}
+
+#section {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    background-color:#87685C;
+    border: 4px solid #87685C;
+    padding: 40px;
+    border-radius: 50px;
+    /* font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400px;
+    color: #FFFFFF;
+    line-height: 40px; */
+    margin-top: 80px;
+    margin-left: 630px;
+    margin-right: 275px;
+    margin-bottom: 60px;
+}
+
+form label {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400px;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+
+input {
+    border-radius: 20px;
+}
+
+#recipe {
+    font-family:'Darumadrop One', sans-serif;
+    font-size: 1.1em;
+    color:#232D41;
+    background-color:#89A0CD;
+    border: 4px solid #89A0CD;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left:40px;
+    margin-right: 40px;
+}
