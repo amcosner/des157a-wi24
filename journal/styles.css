@@ -113,6 +113,14 @@ h2 {
     padding: 24px;
 }
 
+#imagery {
+    margin-left: 118px;
+}
+
+#imagetime {
+    margin-left: 150px;
+}
+
 article h3 {
     font-size: 1.7em;
     color:#7DCE71;
