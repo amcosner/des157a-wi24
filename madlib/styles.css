@@ -7,7 +7,8 @@ body .bones {
     background-repeat:repeat;
     margin:auto;
     width: 1200px;
-    height:1126px;
+    height:750px;
+    max-width: 100%;
 }
 
 #mouse {
@@ -16,6 +17,7 @@ body .bones {
     background-size: 450px;
     position:absolute;
     background-position: 140px 360px;
+    padding-bottom: 60px;
 }
 
 #section1 p{
@@ -43,10 +45,10 @@ body .bones {
 h1 {
     padding: 7px 33px 20px 33px;
     font-family:'Darumadrop One', sans-serif;
-    font-size: 3.1em;
+    font-size: 3em;
     font-weight: 400;
     color: #FFFFFF;
-    background-color: #89A0CD;
+    /* background-color: #89A0CD; */
     border: 5px solid #89A0CD;
     border-radius: 50px;
     text-align: center;
@@ -63,27 +65,37 @@ h3 {
     color: #89A0CD;
 }
 
-#section {
+/* #section {
     display: flex;
     flex-direction: row;
-}
+} */
 
-form {
+form{
     display:flex;
     flex-direction: column;
     background-color:#87685C;
     border: 4px solid #87685C;
-    padding: 40px;
+    padding: 35px;
     border-radius: 50px;
-    /* font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 1.1em;
-    font-weight: 400px;
-    color: #FFFFFF;
-    line-height: 40px; */
     margin-top: 80px;
     margin-left: 630px;
     margin-right: 275px;
     margin-bottom: 60px;
+}
+
+/* #two {
+    background-color:#87685C;
+    border: 4px solid #87685C;
+    padding:35px;
+    border-radius: 50px;
+    margin-top: 80px;
+    margin-left: 600px;
+    margin-right: 250px;
+    margin-bottom: 60px;
+} */
+
+#two {
+    animation: ease 3s fadeIn;
 }
 
 form label {
@@ -96,9 +108,13 @@ form label {
 
 input {
     border-radius: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 0.9em;
+    color:black;
+    padding:3px 5px 3px 5px;
 }
 
-#recipe {
+#recipe{
     font-family:'Darumadrop One', sans-serif;
     font-size: 1.1em;
     color:#232D41;
@@ -108,4 +124,43 @@ input {
     margin-top: 20px;
     margin-left:40px;
     margin-right: 40px;
+}
+
+#recipe:hover {
+    border: 4px solid #232D41;
+    background-color: #232D41;
+    color: #FFFFFF;
+}
+
+@keyframes FadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+#next{
+    font-family:'Darumadrop One', sans-serif;
+    font-size: 1.1em;
+    color:#232D41;
+    background-color:#89A0CD;
+    border: 4px solid #89A0CD;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left:40px;
+    margin-right: 40px;
+    transition-timing-function: ease;
+    transition: all 400ms;
+}
+
+#next:hover {
+    border: 4px solid #232D41;
+    background-color: #232D41;
+    color: #FFFFFF;
+}
+
+.showing {
+    display: flex;
+}
+
+.hidden {
+    display: none;
 }

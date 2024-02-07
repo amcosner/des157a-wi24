@@ -8,57 +8,62 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Darumadrop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Schoolbell&display=swap" rel="stylesheet">
 
     <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="bones">
-    <div id="mouse">
-        <h1>Mouse's Culinary Class</h1>
-        <div id="section1">
-            <p>Hi, I’m a cat named Mouse. I watch my parents cook all the time, so I’m basically a pro-chef. Let me teach you a recipe!</p>
-            <!-- <img src="images/mouse.png" alt="illustration of mouse" width="400" height="447"> -->
-            <h3>I need some words from you first:</h3>
+    <div id="overlayTwo">
+        <div class="bones">
+            <div id="mouse">
+                <h1>Mouse's Culinary Class</h1>
+                <div id="section1">
+                    <p>Hi, I’m a cat named Mouse. I watch my parents cook all the time, so I’m basically a pro-chef.<br>Let me teach ya a recipe!</p>
+                    <!-- <img src="images/mouse.png" alt="illustration of mouse" width="400" height="447"> -->
+                    <h3>But first, I need some words from you!</h3>
+                </div>
+
+                <form id="one" class="showing" >
+                    <label for= "verb1"> a verb (present tense)</label>
+                    <input type="text" id="verb1">
+                        
+                    <label for= "food1">a food item</label>
+                    <input type="text" id="food1">
+
+                    <label for= "sharp1">a sharp object</label>
+                    <input type="text" id="sharp1">
+
+                    <label for= "food2">a food item 2</label>
+                    <input type="text" id="food2">
+
+                    <input type="submit" id="next" value="next slide!">
+                </form>
+
+                <!-- <div id="overlayOne" class="hidden"> -->
+                    <form id="two" class="hidden">
+                        <label for= "hollow">a hollow item</label>
+                        <input type="text" id="hollow1">
+
+                        <label for= "liquid1">a liquid</label>
+                        <input type="text" id="liquid1">
+
+                        <label for= "food3">an inedible food item</label>
+                        <input type="text" id="food3">
+
+                        <!-- <label for= "liquid2">Another Liquid</label>
+                        <input type="text" id="liquid2"> -->
+
+                        <label for= "flat">a flat object</label>
+                        <input type="text" id="flat">
+
+                        <!-- <label for= "green">something green</label>
+                        <input type="text" id="green"> -->
+                        <input type="submit" id="recipe" value="get recipe!">
+                    </form>
+                <!-- </div> -->
+            </div>
         </div>
-
-        <form>
-            <label for= "verb1"> a verb (present tense)</label>
-            <input type="text" id="verb1">
-            
-            <label for= "food1">a food item</label>
-            <input type="text" id="food1">
-
-            <label for= "sharp1">a sharp object</label>
-            <input type="text" id="sharp1">
-
-            <label for= "food2">a food item 2</label>
-            <input type="text" id="food2">
-
-            <label for= "hollow">a hollow item</label>
-            <input type="text" id="hollow1">
-
-            <label for= "liquid1">a liquid</label>
-            <input type="text" id="liquid1">
-
-            <label for= "food3">an inedible food item</label>
-            <input type="text" id="food3">
-
-            <!-- <label for= "liquid2">Another Liquid</label>
-            <input type="text" id="liquid2"> -->
-
-            <label for= "flat">a flat object</label>
-            <input type="text" id="flat">
-
-            <label for= "green">something green</label>
-            <input type="text" id="green">
-
-            <input type="submit" id="recipe" value="get recipe!">
-            
-        </form>
-        <div id="overlay"></div>
-        </div>
-        <article id="madlib"></article>
     </div>
 </body>
 </html>
