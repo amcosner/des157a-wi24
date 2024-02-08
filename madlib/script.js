@@ -17,26 +17,26 @@
         ;
     });
 
-    const madlib = document.querySelectorAll("#overlaytext, p");
+    const madlib = document.querySelectorAll("#finaltext");
     // document.querySelector("#finaltext").className = "showing1";
     const myForm = document.querySelector("form");
 
     myForm.addEventListener("submit", function(event) {
         event.preventDefault();
-        const name = document.querySelector("#verb1").value;
-        const verb1 = document.querySelector("#food1").value;
-        const object = document.querySelector("#sharp1").value;
-        const adj1 = document.querySelector("#food2").value;
-        const adj2 = document.querySelector("#hollow1").value;
-        const goofyname = document.querySelector("#liquid1").value;
-        const verb2 = document.querySelector("#food3").value;
-        const verb3 = document.querySelector("#flat").value;
+        const verb1 = document.querySelector("#verb1").value;
+        const food1 = document.querySelector("#food1").value;
+        const sharp1 = document.querySelector("#sharp1").value;
+        const food2 = document.querySelector("#food2").value;
+        const hollow1 = document.querySelector("#hollow1").value;
+        const liquid1 = document.querySelector("#liquid1").value;
+        const food3 = document.querySelector("#food3").value;
+        const flat = document.querySelector("#flat").value;
 
         let myText;
 
         if(verb1 == ""){
             myText = "Please enter a verb!"
-            document.querySelector("verb1").focus();
+            document.querySelector("#verb1").focus();
         } else if(food1 == ""){
             myText = "Please enter a food item!"
             document.querySelector("#food1").focus();
@@ -77,7 +77,6 @@
         }
 
         document.querySelector('#overlaytext').innerHTML = myText;
-        madlib.innerHTML = myText;
 
         // madlib.innerHTML = myText;
 

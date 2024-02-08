@@ -22,7 +22,7 @@ body .bones {
 
 #section1 p{
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 1.5em;
     color: #FFFFFF;
     line-height: 20px;
@@ -34,7 +34,7 @@ body .bones {
 
 #section1 h3 {
     font-family:'Darumadrop One', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 1.5em;
     color: #89A0CD;
     margin-left: 420px;
@@ -101,7 +101,7 @@ form{
 form label {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 0.9em;
-    font-weight: 400px;
+    font-weight: 400;
     color: #FFFFFF;
     line-height: 30px;
 }
@@ -185,7 +185,7 @@ input {
 
 #overlay p {
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 1em;
     color: #232D41;
     z-index: 9999;
@@ -206,7 +206,7 @@ input {
     transform: translate(35px, 90px);
 }
 
-#overlaytext button {
+#madlib button {
     font-family:'Darumadrop One', sans-serif;
     font-size: 1.6em;
     padding: 10px;
@@ -215,7 +215,9 @@ input {
     border: 4px solid #89A0CD;
     border-radius: 50px;
     padding: 5px 10px 5px 10px;
-    transform: translate(90px 100px);
+    position: absolute;
+    /* margin-left: 500px; */
+    transform: translate(800px, 800px); 
 }
 
 .showing {
