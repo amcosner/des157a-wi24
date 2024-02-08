@@ -4,15 +4,13 @@
     console.log('reading js');
 
     // triggering buttons
-
-    document.querySelector('#next').addEventListener('click',function(event) {
+    document.querySelector('#next').addEventListener('submit',function(event) {
         event.preventDefault();
         document.querySelector('#two').className="showing";
         document.querySelector('#one').className="hidden";
     });
 
-
-    document.querySelector('#recipe').addEventListener('click',function(event) {
+    document.querySelector('#recipe').addEventListener('submit',function(event) {
         event.preventDefault();
         document.querySelector('#overlay').className="showing1"
         document.querySelector('#finaltext').className="showing1"
@@ -20,7 +18,7 @@
         ;
     });
 
-    document.querySelector('#retry').addEventListener('click',function(event) {
+    document.querySelector('#retry').addEventListener('submit',function(event) {
         event.preventDefault();
         document.querySelector('#overlay').className="hidden"
         document.querySelector('#finaltext').className="hidden"
@@ -28,82 +26,18 @@
         ;
     });
 
-    // creating madlib
-    // const finalText = document.querySelector("#finaltext");
-    // document.querySelector("#finaltext").className = "showing1";
-    // const myForm = document.querySelectorAll("#one", "#two");
-
-    // myForm.addEventListener("submit", function(event) {
-    //     event.preventDefault();
-    //     const verb1 = document.querySelector("#verb1").value;
-    //     const food1 = document.querySelector("#food1").value;
-    //     const sharp1 = document.querySelector("#sharp1").value;
-    //     const food2 = document.querySelector("#food2").value;
-    //     const hollow1 = document.querySelector("#hollow1").value;
-    //     const liquid1 = document.querySelector("#liquid1").value;
-    //     const food3 = document.querySelector("#food3").value;
-    //     const flat = document.querySelector("#flat").value;
-
-    //     let myText;
-
-    //     if(verb1 == "" || verb1 == Null || verb1 == false){
-    //         alert('Please enter a verb!')
-    //         document.querySelector("#verb1").focus();
-    //     } else if(food1 == "" || food1 == Null || food1 == false){
-    //         alert('Please enter a food item!')
-    //         document.querySelector("#food1").focus();
-    //     } else if(sharp1 == "" || sharp1 == Null || sharp1 == false){
-    //         alert('Please enter a sharp item!')
-    //         document.querySelector("#sharp1").focus();
-    //     } else if(food2 == "" || food2 == Null || food2 == false){
-    //         alert('Please enter another food item!')"
-    //         document.querySelector("#food2").focus();
-    //     } else if(hollow1 == "" || hollow1 == Null || hollow1 == false){
-    //         alert('Please enter a hollow object!')
-    //         document.querySelector("#hollow1").focus();
-    //     } else if(liquid1 == "" || liquid1 == Null || liquid1 == false){
-    //         alert('Please enter a liquid!')
-    //         document.querySelector("#liquid1").focus();
-    //     } else if(food3 == "" || food3 == Null || food3 == false){
-    //         alert("Please enter an inedible item!")
-    //         document.querySelector("#food3").focus();
-    //     } else if(flat == "" || flat == Null || flat == false){
-    //         alert("Please enter a flat object!")
-    //         document.querySelector("#flat").focus();
-    //     } else {
-    //         myText = `1. Let’s ${verb1} the sauce. Take the ${food1} and mince it finely with any ${sharp1} you can find. You want to cut it really quick so it makes a cool sound. 
-    //         2. Next, you have to boil the ${food2}. Take a big ${hollow1} and fill it with ${liquid1}. Turn the stove up to the highest setting and watch it do its magic! I’m not really sure when to tell when it’s done, but you should just trust your “intooichun”, like my parents say.
-    //         3. This next part is really easy. We’re going to saute ${food3}, so put some ${liquid1} into a pan on high heat. Then, add the ${food3} and let it sit until it starts to make a really scary noise. 
-    //         4. Let the ${food3} “rest.” I guess this makes sense because even food gets sleepy. Then safely cut it into pieces. Place it onto your favorite ${flat} and drizzle it with the sauce from earlier. Plate it with the ${food1}  from earlier.
-    //         5. Now we eat! I personally don’t like to chew my food but that’s up to you.
-    //         `;
-
-    //         document.querySelector("#verb1").value = "";
-    //         document.querySelector("#food1").value = "";
-    //         document.querySelector("#sharp1").value = "";
-    //         document.querySelector("#food2").value = "";
-    //         document.querySelector("#hollow1").value = "";
-    //         document.querySelector("#liquid1").value = "";
-    //         document.querySelector("#food3").value = "";
-    //         document.querySelector("#flat").value = "";
-    //     }
-
-    //     // document.querySelector('#finaltext').innerHTML = myText;
-
-    //     finalText.innerHTML = myText;
-
-    //     event.preventDefault();
-    //     document.getElementById("myform").className = "hidden";
-    //     document.getElementById("finaltext").className = "showing1";
-    // });
-
-
     // more complicated version that isn't working: 
-    const myForm = document.querySelectorAll('#one", "#two');
+    const FormOne = document.querySelector('#one');
+    const FormTwo = document.querySelector('#two');
     const finalText = document.querySelector('#finaltext');
     const formData = document.querySelectorAll("input[type=text]");
 
-    myForm.addEventListener('submit', function (event) {
+    FormOne.addEventListener('submit', function (event) {
+        event.preventDefault();
+        processFormData(formData);
+    });
+
+    FormTwo.addEventListener('submit', function (event) {
         event.preventDefault();
         processFormData(formData);
     });
@@ -132,7 +66,7 @@
     // function that targets empty field and sends error message
     function showErrors (formData,emptyfields){
         const errorId = formData[emptyfields[0]].id;
-        const errorText = `Plesae fill out this field: ${errorId}`;
+        const errorText = `Please fill out this field: ${errorId}`;
         finalText.innerHTML = errorText;
         document.querySelector(`${errorId}`).focus()
     }

@@ -70,7 +70,33 @@ h3 {
     flex-direction: row;
 } */
 
-form{
+/* form{
+    display:flex;
+    flex-direction: column;
+    background-color:#87685C;
+    border: 4px solid #87685C;
+    padding: 35px;
+    border-radius: 50px;
+    margin-top: 80px;
+    margin-left: 630px;
+    margin-right: 275px;
+    margin-bottom: 60px;
+} */
+
+#one {
+    display:flex;
+    flex-direction: column;
+    background-color:#87685C;
+    border: 4px solid #87685C;
+    padding: 35px;
+    border-radius: 50px;
+    margin-top: 80px;
+    margin-left: 630px;
+    margin-right: 275px;
+    margin-bottom: 60px;
+}
+
+#two {
     display:flex;
     flex-direction: column;
     background-color:#87685C;
