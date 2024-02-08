@@ -188,10 +188,10 @@ input {
     font-weight: 400;
     font-size: 1em;
     color: #232D41;
-    z-index: 9999;
-    transform: translate(300px, 100px);
-    margin-left: 40px;
-    margin-right: 670px;
+    /* z-index: 9999; */
+    /* transform: translate(300px, 100px); */
+    margin-left: 290px;
+    margin-top: 48px;
     /* line-height: 20px;
     margin-top: 40px;
     margin-left: 420px;
@@ -203,10 +203,12 @@ input {
     font-size: 3em;
     text-align: center;
     color: #232D41;
-    transform: translate(35px, 90px);
+    /* transform: translate(35px, 90px); */
+    margin-left: 450px;
+    margin-top: 140px;
 }
 
-#madlib button {
+#retry {
     font-family:'Darumadrop One', sans-serif;
     font-size: 1.6em;
     padding: 10px;
@@ -217,7 +219,12 @@ input {
     padding: 5px 10px 5px 10px;
     position: absolute;
     /* margin-left: 500px; */
-    transform: translate(800px, 800px); 
+    transform: translate(550px, 700px); 
+}
+
+#retry:hover {
+    background-color:#87685C;
+    border: 4px solid #87685C;
 }
 
 .showing {
