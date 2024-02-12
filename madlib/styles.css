@@ -17,7 +17,7 @@ body .bones {
     background-size: 450px;
     position:absolute;
     background-position: 140px 360px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 #section1 p{
@@ -103,7 +103,7 @@ h3 {
     border: 4px solid #87685C;
     padding: 35px;
     border-radius: 50px;
-    margin-top: 80px;
+    margin-top: -418px;
     margin-left: 630px;
     margin-right: 275px;
     margin-bottom: 60px;
@@ -120,9 +120,9 @@ h3 {
     margin-bottom: 60px;
 } */
 
-#two {
+/* #two {
     animation: ease 3s fadeIn;
-}
+} */
 
 form label {
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -187,7 +187,7 @@ input {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100vw;
-    height: 150vh;
+    height: 160vh;
     transition-property: opacity, visibility;
     transition-duration: 1s;
     transition-timing-function: ease;
@@ -216,8 +216,9 @@ input {
     color: #232D41;
     /* z-index: 9999; */
     /* transform: translate(300px, 100px); */
-    margin-left: 290px;
-    margin-top: 48px;
+    margin-left: 400px;
+    margin-right: 430px;
+    margin-top: -20px;
     /* line-height: 20px;
     margin-top: 40px;
     margin-left: 420px;
@@ -230,8 +231,8 @@ input {
     text-align: center;
     color: #232D41;
     /* transform: translate(35px, 90px); */
-    margin-left: 450px;
-    margin-top: 140px;
+    margin-left: -10px;
+    margin-top: 130px;
 }
 
 #retry {
@@ -245,7 +246,7 @@ input {
     padding: 5px 10px 5px 10px;
     position: absolute;
     /* margin-left: 500px; */
-    transform: translate(550px, 700px); 
+    transform: translate(590px, 700px); 
 }
 
 #retry:hover {
@@ -256,11 +257,22 @@ input {
 .showing {
     display: flex;
 }
-
+/* 
 .showing1 {
     display: block;
 }
 
 .hidden {
     display: none;
+} */
+
+.showing1 {
+    /* display: block; */
+    visibility: visible;
+
+}
+
+.hidden {
+    /* display: none; */
+    visibility: hidden;
 }
