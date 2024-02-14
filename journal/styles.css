@@ -48,7 +48,7 @@ article {
     padding-top: 0;
 }
 
-article img {
+.floating {
     display: block;
     margin-left: 170px;
     padding-top: 40px;
@@ -121,6 +121,31 @@ h2 {
     margin-left: 150px;
 }
 
+#charlotte {
+    margin-left: 80px;
+    margin-top: -40px;
+    margin-bottom: -20px;
+}
+
+#josh {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px 40px 40px 40px;
+}
+
+
+figcaption {
+    /* text-align: center; */
+    margin-left: 80px;
+    margin-bottom: 50px;
+    color: #7DCE71;
+    font-size: 0.5;
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    /* padding: 50px; */
+}
+
 article h3 {
     font-size: 1.7em;
     color:#7DCE71;
@@ -144,6 +169,10 @@ time {
     font-family: 'VT323', monospace;
     font-weight: 400;
     margin-left: 165px;
+}
+
+#post4time {
+    margin-left: 135px;
 }
 
 /* main content of page */
