@@ -7,9 +7,11 @@
     //     btns.style.backgroundColor = "#FEADFD";
     // });
 
+    // sprinkle button
     const sprinklebtn = document.querySelector('#sprinklebtn');
     sprinklebtn.addEventListener('click',function(event){
         // sprinklebtn.style.backgroundColor = "#FCFF7E";
+        // altering overlay information
         document.querySelector('#spin').src= "images/sprinkle.GIF";
         document.querySelector('#spin').setAttribute('alt','spinning version of sprinkle');
         document.querySelector('#meetblank').innerHTML="meet  sprinkle!"
@@ -21,7 +23,9 @@
         document.querySelector('main').className= 'hidden';
     });
 
+    // charlotte button
     document.querySelector('#charlottebtn').addEventListener('click',function(event){
+        // altering overlay information
         document.querySelector('#spin').src= "images/charlotte.GIF";
         document.querySelector('#spin').setAttribute('alt','spinning version of charlotte');
         document.querySelector('#meetblank').innerHTML= "meet  charlotte!";
@@ -33,7 +37,9 @@
         document.querySelector('main').className= 'hidden';
     });
 
+    // dot button
     document.querySelector('#dotbtn').addEventListener('click',function(event){
+        // altering overlay information
         document.querySelector('#spin').src= "images/dot.GIF";
         document.querySelector('#spin').setAttribute('alt','spinning version of dot');
         document.querySelector('#meetblank').innerHTML= "meet  dot!"
@@ -45,6 +51,7 @@
         document.querySelector('main').className= 'hidden';
     });
 
+    // altering shoe dino button
    document.querySelector('#dinobtn').addEventListener('click',function(event){
         document.querySelector('#spin').src= "images/dino.GIF";
         document.querySelector('#spin').setAttribute('alt','spinning version of shoe dino');
