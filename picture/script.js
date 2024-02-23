@@ -29,7 +29,7 @@
         document.querySelector('#spin').src= "images/charlotte.GIF";
         document.querySelector('#spin').setAttribute('alt','spinning version of charlotte');
         document.querySelector('#meetblank').innerHTML= "meet  charlotte!";
-        document.querySelector('#story').innerHTML= "This little character looks cute, but is actually a menace from the show, Madoka Magica, and is one of the first villains to appear. They initially released 2 figures in this specific series, and my sister bought the first one. She peered pressured me into buying the other one so we could match (not that I regret it :D). Also, this figure line is awesome because the material is fuzzy! Charlotte is (respectfully) the biggest brat out of all my trinkets.";
+        document.querySelector('#story').innerHTML= "This little character looks cute, but is actually a menace from the show, Madoka Magica, and is one of the first villains to appear. They initially released 2 figures in this specific series, and my sister bought the first one. She peer pressured me into buying the other one so we could match (not that I regret it :D). Also, this figure line is awesome because the material is fuzzy! Charlotte is (respectfully) the biggest brat out of all my trinkets.";
         document.querySelector('#song').innerHTML = "<a href='https://open.spotify.com/track/6dw4AxBtf7BRyohRu6rCoP?si=7d182d650d96402d'>Mahou Monki!</a> by bye2";
         document.querySelector('#mbti').innerHTML = "ESTP (action-oriented, skilled negotiator)";
         document.querySelector('#food').innerHTML = "giant turkey leg";

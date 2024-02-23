@@ -38,6 +38,12 @@ header {
     justify-content: space-around;
 }
 
+#images img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* .items {
     margin-left: -10px;
 } */
