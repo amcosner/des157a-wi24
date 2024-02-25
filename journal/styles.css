@@ -209,7 +209,8 @@ footer {
     padding: 50px;
 }
 
-/* #gamedesign {
-    margin-left: 120px;
+#gamedesign {
+    margin-left: 110px;
     margin-right: 120px;
-} */
+    text-align: center;
+}
