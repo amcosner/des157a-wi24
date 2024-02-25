@@ -171,8 +171,12 @@ time {
     margin-left: 165px;
 }
 
-#post4time {
+.post4time {
     margin-left: 135px;
+}
+
+.post5time {
+    margin-left: 145px;
 }
 
 /* main content of page */
@@ -203,4 +207,9 @@ footer {
     font-family: 'VT323', monospace;
     font-weight: 400;
     padding: 50px;
+}
+
+#gamedesign {
+    margin-left: 120px;
+    margin-right: 120px;
 }
