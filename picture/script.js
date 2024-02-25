@@ -10,15 +10,22 @@
     // sprinkle button
     const sprinklebtn = document.querySelector('#sprinklebtn');
     sprinklebtn.addEventListener('click',function(event){
-        // sprinklebtn.style.backgroundColor = "#FCFF7E";
         // altering overlay information
+        
+        // changing image
         document.querySelector('#spin').src= "images/sprinkle.GIF";
         document.querySelector('#spin').setAttribute('alt','spinning version of sprinkle');
+        // changing title
         document.querySelector('#meetblank').innerHTML="meet  sprinkle!"
+        // changing story
         document.querySelector('#story').innerHTML="I found Sprinkle at a thrift store for $2, which I was really excited about because I love the toy brand, Kidrobot. This is one of their older figures that is really hard to find (much less for cheap). Ever since I was a kid, I've loved dessert aesthetics and I always collect dessert-related items. I find myself staring at the small details on this figure even though I've had it for a year already."
+        // changing song link
         document.querySelector('#song').innerHTML = "<a href='https://open.spotify.com/track/6QNvJpBdvgqVovmSTwfGNK?si=e5f8b13b500141b4'>cosmic tone cooking</a> by capsule"
+        // changing mbti
         document.querySelector('#mbti').innerHTML = "ESTP (outgoing and spontaneous)"
+        // changing fav food
         document.querySelector('#food').innerHTML = "strawberry ice cream with konpeito"
+        // making main page disappear
         document.querySelector('#overlay').className= 'showing';
         document.querySelector('main').className= 'hidden';
     });
