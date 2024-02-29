@@ -52,12 +52,11 @@ header h2 {
 
 #startoverlay {
     background-image: url(images/overlay1.png);
-    position:relative;
-    z-index:-1;
+    position:absolute;
+    z-index:0;
     background-repeat: no-repeat;
     max-width: 100%;
     transform: translate(400px, -400px);
-    z-index:1;
     width: 666px;
     height: 301px;
 }
