@@ -1,0 +1,114 @@
+body {
+    background-image: url(images/grass.png);
+    width: 1200px;
+    height: 750px;
+    max-width: 100%;
+    margin: auto;
+}
+
+main {
+    margin-bottom: -100px;
+}
+
+header {
+    background-color: #0C2010;
+    margin-top: -40px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    background-color: white;
+    color: #E37137;
+    padding: 6px;
+    font-family: "Miltonian Tattoo", serif;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 500px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 30px;
+    transform: translate(10px, 50px);
+    /* transform:rotate(-1deg) */
+}
+
+header h2 {
+    background-color: #E37137;
+    color: white;
+    padding: 6px;
+    font-family: "Miniver", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center;
+    margin-left: 680px;
+    margin-right: 280px;
+    padding: 10px 20px 10px 20px;
+    margin-top: -35px;
+    /* transform: translate(190px, -24px); */
+    transform-origin: 80% 80%;
+    transform:rotate(2deg);
+}
+
+#startoverlay {
+    background-image: url(images/overlay1.png);
+    position:relative;
+    z-index:-1;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    transform: translate(400px, -400px);
+    z-index:1;
+    width: 666px;
+    height: 301px;
+}
+
+#startoverlay p {
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 400;
+    font-size: 1 em;
+    margin-top: -30px;
+    margin-left: 220px;
+    margin-right: 100px;
+}
+
+#startoverlay button {
+    background-color:#E37137;
+    color:white;
+    font-size: 1.2em;
+    padding: 5px 10px 5px 10px;
+    font-weight: 400;
+    border-radius: 40px;
+    border-style: none;
+    margin-left: 320px;
+}
+
+#clock {
+    transform: translate(350px, -10px);
+    width: 129px;
+    height: 75px;
+    margin-bottom: 40px;
+}
+
+/* #clock {
+    background-image: url(images/clock.png);
+    background-repeat: no-repeat;
+} */
+
+#bigImage {
+    margin-top: -200px;
+    /* margin-bottom: 3px; */
+    margin-left: 80px;
+    width: 80%;
+    /* max-width: 100%; */
+    position: relative;
+    z-index: 1;
+}
+
+.showing {
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
+    margin-top: -60px;
+}
