@@ -1,19 +1,35 @@
 body {
-    background-image: url(images/grass.png);
-    width: 1200px;
-    height: 750px;
-    max-width: 100%;
+    background-image: url(images/library.png);
+    background-size: 110%;
     margin: auto;
 }
+
+/* #background{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: auto;
+    width: 1200px;
+    height: 750px; */
+    /* width: 100%;
+    height: 100%; */
+    /* position: relative;
+    z-index: 1;
+    margin-top: -600px;
+} */
 
 main {
     margin-bottom: -100px;
 }
 
-header {
-    background-color: #0C2010;
-    margin-top: -40px;
+/* header { */
+    /* background-color: #0C2010; */
+    /* margin-top: -30px;
     padding-bottom: 20px;
+    position: relative;
+    z-index: 4;
+} */
+
+header {
+    transform: translate(98px, -31px);
 }
 
 header h1 {
@@ -22,41 +38,51 @@ header h1 {
     padding: 6px;
     font-family: "Miltonian Tattoo", serif;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     margin-left: 250px;
-    margin-right: 500px;
+    margin-right: 448px;
     padding: 10px 20px 10px 20px;
     margin-top: 30px;
-    transform: translate(10px, 50px);
+    transform: translate(-172px, 58px);
     /* transform:rotate(-1deg) */
 }
 
 header h2 {
-    background-color: #E37137;
-    color: white;
+    background-color: #A8D9B3;
+    color: #40282C;
     padding: 6px;
     font-family: "Miniver", cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.6em;
     text-align: center;
-    margin-left: 680px;
-    margin-right: 280px;
-    padding: 10px 20px 10px 20px;
+    margin-left: 576px;
+    margin-right: 320px;
+    padding: 20px 30px 20px 30px;
     margin-top: -35px;
     /* transform: translate(190px, -24px); */
     transform-origin: 80% 80%;
     transform:rotate(2deg);
+    line-height: 28px;
+}
+
+#star {
+    margin-top: 0;
+    position: absolute;
+    transform: translate(406px, 0px);
+    z-index: 3;
+    padding: 20px;
+    max-width: 100%;
 }
 
 #startoverlay {
     background-image: url(images/overlay1.png);
     position:absolute;
-    z-index:0;
+    z-index:2;
     background-repeat: no-repeat;
     max-width: 100%;
-    transform: translate(400px, -400px);
+    transform: translate(312px, 79px);
     width: 666px;
     height: 301px;
 }
@@ -64,10 +90,11 @@ header h2 {
 #startoverlay p {
     font-family: "Libre Franklin", sans-serif;
     font-weight: 400;
-    font-size: 1 em;
-    margin-top: -30px;
-    margin-left: 220px;
-    margin-right: 100px;
+    font-size: 1.2em;
+    line-height: 23px;
+    margin-top: -660px;
+    margin-left: 192px;
+    margin-right: 70px;
 }
 
 #startoverlay button {
@@ -78,29 +105,161 @@ header h2 {
     font-weight: 400;
     border-radius: 40px;
     border-style: none;
-    margin-left: 320px;
+    margin-left: 340px;
 }
 
-#clock {
+/* #clock {
     transform: translate(350px, -10px);
-    width: 129px;
-    height: 75px;
     margin-bottom: 40px;
+    width: 124px;
+    height: 84px;
 }
+
+#gameclock {
+    transform: translate(681px, -502px);
+    /* margin-bottom: 40px; */
+    /* position: relative;
+    z-index: 3;
+} */ 
 
 /* #clock {
     background-image: url(images/clock.png);
     background-repeat: no-repeat;
 } */
 
-#bigImage {
-    margin-top: -200px;
-    /* margin-bottom: 3px; */
+#bigCharacter {
+    transform: translate(-270px, -292px);
+    /* margin-top: -200px;
+    margin-bottom: 3px;
     margin-left: 80px;
     width: 80%;
-    /* max-width: 100%; */
+    max-width: 100%; */
     position: relative;
-    z-index: 1;
+    z-index: 5;
+}
+
+#smallcharacter, #dead {
+    transform: translate(134px, -45px);
+}
+
+#overlay2 {
+    transform: translate(450px, -79px);
+}
+
+#bfast, #bfastyes, #bfastno, #class, #payattention, #writeessay, #lunch, #lunchsoup, #lunchrice, #work, #worklibrary, #workhome, #freetime, #freetimewalk, #freetimehw, #congrats{
+    background-image: url(images/overlay2.png);
+    background-repeat: no-repeat;
+    /* background-size: 43%; */
+    background-position: 487px, 400px;
+    padding: 200px;
+    position: absolute;
+    margin-top: -591px;
+}
+
+#youdied {
+    background-image: url(images/overlay2.png);
+    background-repeat: no-repeat;
+    /* background-size: 43%; */
+    background-position: 487px, 400px;
+    padding: 200px;
+    position: absolute;
+    margin-top: 76px;
+}
+
+#bfast p, #bfastyes p, #bfastno p, #payattention p, #writeessay p, #lunch p, #lunchsoup p, #lunchrice p, #work p, #worklibrary p, #workhome p, #freetime p, #freetimewalk p, #freetimehw p, #congrats p, #youdied p {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.2em;
+    z-index: 5;
+    margin-top: -36px;
+    margin-left: 371px;
+    margin-right: 150px;
+    /* transform: translate(450px, -79px); */
+}
+
+#class p {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.2em;
+    z-index: 5;
+    margin-top: -36px;
+    margin-left: 371px;
+    margin-right: 160px;
+}
+
+#start, #btnbfastyes, #btnbfastno, #btnbfastnext1,#btnbfastnext2, #attention, #essay, #btnattentionnext, #btnessaynext, #btnsoup, #btnrice, #btnsoupnext, #btnricenext, #btnlibrary, #btnhome, #btnlibrarynext, #btnhomenext, #btnwalk, #btnhw, #btnwalknext, #btnhwnext, #btnretry, #btndeadretry {
+    font-family: "Libre Franklin", sans-serif;
+    background-color:#E37137;
+    color:white;
+    font-size: 1.2em;
+    padding: 10px 20px 10px 20px;
+    font-weight: 400;
+    border-radius: 30px;
+    border-style: none;
+}
+
+#btnbfastyes{
+    transform:translate(433px, 36px);
+}
+
+#btnbfastno{
+    transform: translate(539px, 36px);
+}
+
+#btnlibrary{
+    transform: translate(412px, 36px);
+}
+
+#btnwalk{
+    transform: translate(426px, 36px);
+}
+
+#btnhw{
+    transform: translate(464px, 36px);
+}
+
+#btnhome{
+    transform: translate(465px,36px);
+}
+
+#attention, #btnsoup {
+    transform:translate(381px, 36px);
+}
+
+#essay, #btnrice {
+    transform:translate(407px, 36px);
+}
+
+#btnbfastnext1, #btnbfastnext2, #retry, #btnattentionnext, #btnessaynext, #btnsoupnext, #btnricenext, #btnlibrarynext, #btnhomenext, #btnwalknext, #btnhwnext, #btnretry, #btndeadretry {
+    transform: translate(513px, 32px);
+}
+
+#health {
+    transform: translate(611px, -499px);
+}
+
+#percent {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    transform: translate(87px, 4px);
+    /* margin-top: -36px; */
+    /* margin-right: 160px; */
+}
+
+#healthbar {
+    width: 23%;
+    height: 30px;
+    border: 2px solid #40282C;
+    position: relative;
+    overflow: hidden;
+}
+
+#healthbar div {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #E37137;
 }
 
 .showing {
@@ -109,5 +268,5 @@ header h2 {
 
 .hidden {
     display: none;
-    margin-top: -60px;
+    /* margin-top: -60px; */
 }

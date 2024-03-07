@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Miltonian+Tattoo&family=Miniver&display=swap" rel="stylesheet">
@@ -15,128 +17,189 @@
 
 <body>
     <header>
+        <div id="star"><img src="images/star.png" alt="light blue star doodle" width="569" height="238"></div>
         <h1>a day in the life</h1>
-        <h2>can we survive<br> minor inconveniences?</h2>
+        <h2>will we survive<br> minor inconveniences?</h2>
     </header>
 
     <main>
-
-        <div id="overlay" class="hidden"></div>
-        <div id="bigImage" class="showing">
+        <!-- <div id="bigImage" class="hidden">
             <img src="images/bigCharacter.png" alt="illustration of the main character (person with green hair, a plaid shirt, dark jeans, and a bunny hat)" width="612" height="736">
-        </div>
+        </div> -->
 
         <div id="startoverlay" class="showing">
-            <img id="clock" src="images/clock.png" alt="mini alarm clock with a smiley face on it" width="169" height="115">
-            <p>Hello, I'm Moss, a fellow college student! Please help me make decisions today. Your goal is simple: to get me through the day with as much health left as possible. My bedtime is 11pm. I'm counting on you! </p>
+            <img id="bigCharacter" src="images/bigCharacter.png" alt="illustration of the main character (person with green hair, a plaid shirt, dark jeans, and a bunny hat)" width="612" height="736">
+            <!-- <img id="clock" src="images/clock.png" alt="mini alarm clock with a smiley face on it" width="169" height="115"> -->
+            <p>Hello, I'm Moss, a fellow college student! Please help me make decisions today. Your goal is simple: to get me through the day with as much health  left as possible. I'm counting on you! </p>
             <button id="start">start game!</button>
         </div>
 
         <section id="youdied" class="hidden">
+            <!-- <img id="dead" src="images/deadaf.png" alt="skeleton being electrocuted" width="368" height="534"> -->
             <p>ugh...no...energy...can't...move...help...</p>
-            <button id="retry">retry</button>
+            <button id="btndeadretry">retry</button>
         </section>
 
+        <div id="smallcharacter" class="hidden">
+            <img src="images/smallcharacter.png" alt="smaller version of main character, moss" width="368" height="534">
+        </div>
+
+        <div id="deadcharacter"  class="hidden">
+            <img id="dead" src="images/deadaf.png" alt="skeleton being electrocuted" width="368" height="534">
+        </div>
+
+        <div id="health" class="hidden">
+            <p id="percent">health: 100%</p>
+            <div id="healthbar"><div></div></div>
+        </div>
+
+        <!-- <div id="gameclock">
+            <img id="clock2" src="images/clock2.png" alt="mini alarm clock" width="132" height="90">
+        </div> -->
+
         <section id="bfast" class="hidden">
-            <p>Oh no! Today is already off to a rough start. I'm running late to class, should I still eat breakfast?</p>
-            <button id="btnbfastyes">yes</button>
-            <button id="btn bfastno">no</button>
+            <!-- <img id="overlay2" src="images/overlay2.png" alt="paper cut out rectangle" width="494" height="304"> -->
+            <div class="overlaytext">
+                <p>Oh no! Today is already off to a rough start. I'm running late to class, should I still eat breakfast?</p>
+                <button id="btnbfastyes">yes</button>
+                <button id="btnbfastno">no</button>
+            </div>
         </section>
 
         <section id="bfastyes" class="hidden">
-            <p>I ended up being a bit late to class, but now I have energy for the rest of the day (+5 points). Good choice! </p>
-            <button id="btnbfastnext1">next</button>
+            <!-- <img id="clock2" src="images/clock2.png" alt="mini alarm clock" width="132" height="90"> -->
+            <div class="overlaytext">
+                <p>I ended up being a bit late to class, but now I have energy for the rest of the day. Good choice! </p>
+                <button id="btnbfastnext1">next</button>
+            </div>
         </section>
 
         <section id="bfastno" class="hidden">
-            <p>i think...i needed food...</p>
-            <button id="btnbfastnext2">next</button>
+            <!-- <img id="clock2" src="images/clock2.png" alt="mini alarm clock" width="132" height="90"> -->
+            <div class="overlaytext">
+                <p>I don't know if skipping breakfast was the right choice...(-80 points)</p>
+                <button id="btnbfastnext2">next</button>
+            </div>
         </section>
 
         <section id="class" class="hidden">
-            <p>I'm trying to focus in class right now, but I have an 8 page paper due that I'm really stressed about. Should I pay attention to the lecture or should I write my essay?</p>
-            <button id="attention">pay attention</button>
-            <button id="essay">write essay</button>
+            <div class="overlaytext">
+                <p>I'm trying to focus in class right now, but I have an 8 page paper due that I'm really stressed about. Should I pay attention to the lecture or should I write my essay?</p>
+                <button id="attention">pay attention</button>
+                <button id="essay">write essay</button>
+            </div>
         </section>
 
         <section id="payattention" class="hidden">
-            <p>I feel like a great student! But now I'm so stressed (-5 points)</p>
-            <button id="btnattentionnext">next</button>
+            <div class="overlaytext">
+                <p>Hmm... I feel like a great student! But now I'm so stressed, I feel like I'm going to faint (-5 points).</p>
+                <button id="btnattentionnext">next</button>
+            </div>
         </section>
 
         <section id="writeessay" class="hidden">
-            <p>Yay! I feel so refreshed after finishing my paper! I'm not really sure what's happening in class now but that's another day's problem.</p>
-            <button id="btnessaynext">next</button>
+            <div class="overlaytext">
+                <p>Yay! I feel so refreshed after finishing my paper! I'm not really sure what's happening in class now, but that's a problem for another day.</p>
+                <button id="btnessaynext">next</button>
+            </div>
         </section>
 
         <section id="lunch" class="hidden">
-            <p>FINALLLY it's lunchtime! I'm at the dining hall now. Should I get chicken soup or fried rice?</p>
-            <button id="soup">chicken soup</button>
-            <button id="rice">fried rice</button>
+            <div class="overlaytext">
+                <p>FINALLLY it's lunchtime! I'm at the dining hall now. Should I get chicken soup or fried rice?</p>
+                <button id="btnsoup">chicken soup</button>
+                <button id="btnrice">fried rice</button>
+            </div>
         </section>
 
         <section id="lunchsoup" class="hidden">
-            <p>Oh no...I think I have food poisoning. Trust dining hall chicken at your own risk. (-5 points)</p>
-            <button id="btnsoupnext">next</button>
+            <div class="overlaytext">
+                <p>Oh no...I think I have food poisoning. Trust dining hall chicken at your own risk. (-5 points)</p>
+                <button id="btnsoupnext">next</button>
+            </div>
         </section>
 
         <section id="lunchrice" class="hidden">
-            <p>I feel very full and happy. That was a great meal (+5 points)</p>
-            <button id="btnricenext">next</button>
+            <div class="overlaytext">
+                <p>I feel very full and happy. That was a great meal (+5 points)! </p>
+                <button id="btnricenext">next</button>
+            </div>
         </section>
 
         <section id="work" class="hidden">
-            <p>I have sooo much homework to do (starts crying). Should I work at the library or at home?</p>
-            <button id="library">library</button>
-            <button id="home">home</button>
+            <div class="overlaytext">
+                <p>I have sooo much homework to do (starts crying). Should I work at the library or at home?</p>
+                <button id="btnlibrary">library</button>
+                <button id="btnhome">home</button>
+            </div>
         </section>
 
         <section id="worklibrary" class="hidden">
-            <p>I was able to have a really productive study session! All my homework is now done for the day. (+5 points)</p>
-            <button id="btnlibrarynext">next</button>
+            <div class="overlaytext">
+                <p>I was able to have a really productive study session! All my homework is now done for the day. (+5 points)</p>
+                <button id="btnlibrarynext">next</button>
+            </div>
         </section>
 
-        <section id="homelibrary" class="hidden">
-            <p>I couldn't focus at all. I got nothing done and now I'm so stressed I have a headache. I'm just going to pretend like I don't have work to do (-5 points).</p>
-            <button id="btnlibrarynext">next</button>
+        <section id="workhome" class="hidden">
+            <div class="overlaytext">
+                <p>I couldn't focus at all. I ended up deep cleaning and taking a 5 hour nap. I'm just going to pretend like I don't have work to do (-5 points).</p>
+                <button id="btnhomenext">next</button>
+            </div>
         </section>
 
         <section id="freetime" class="hidden">
-            <p>I have some free time in my schedule now. Should I go on a walk or should I try to get more homework for tomorrow done?</p>
-            <button id="walk">walk</button>
-            <button id="homework">homework</button>
+            <div class="overlaytext">
+                <p>I have some free time in my schedule now. Should I go on a walk or should I try to get more homework for tomorrow done?</p>
+                <button id="btnwalk">walk</button>
+                <button id="btnhw">homework</button>
+            </div>
         </section>
 
         <section id="freetimewalk" class="hidden">
-            <p>I enjoyed spending time in nature. I suddenly feel very passionate about life (+5 points).</p>
-            <button id="btnwalknext">next</button>
+            <div class="overlaytext">
+                <p>I enjoyed spending time in nature. I suddenly feel very passionate about life (+5 points).</p>
+                <button id="btnwalknext">next</button>
+            </div>
         </section>
 
         <section id="freetimehw" class="hidden">
-            <p>I got a couple more assignments done. But now I'm really burnt out. (-5 points)</p>
-            <button id="btnhwnext">next</button>
+            <div class="overlaytext">
+                <p>I got a couple more assignments done. But now I'm really burnt out. (-5 points)</p>
+                <button id="btnhwnext">next</button>
+            </div>
         </section>
 
-        <section id="hangout" class="hidden">
-            <p>I'm feeling lonely now and want to hang out with some friends. Should we go get drinks or should we have a chill movie night at home?</p>
-            <button id="bar">drinks</button>
-            <button id="movienight">movie night</button>
+        <!-- <section id="hangout" class="hidden">
+            <div class="overlaytext">
+                <p>I'm feeling lonely now and want to hang out with some friends. Should we go get drinks or should we have a chill movie night at home?</p>
+                <button id="bar">drinks</button>
+                <button id="movienight">movie night</button>
+            </div>
         </section>
 
         <section id="hangoutbar" class="hidden">
-            <p>I feel so dizzy. Who let me drink on a Tuesday. I'm gonna fall over (-5 points).</p>
-            <button id="bar">next</button>
+            <div class="overlaytext">
+                <p>I feel so dizzy. Who let me drink on a Tuesday. I'm gonna fall over (-5 points).</p>
+                <button id="bar">next</button>
+            </div>
         </section>
 
         <section id="hangoutmovie" class="hidden">
-            <p>I'm so glad we took it easy today. I had a great time with my friends and feel recharged now (+5 points).</p>
-            <button id="bar">next</button>
-        </section>
+            <div class="overlaytext">
+                <p>I'm so glad we took it easy today. I had a great time with my friends and feel recharged now (+5 points).</p>
+                <button id="bar">next</button>
+            </div>
+        </section> -->
 
         <section id="congrats" class="hidden">
-            <p>Congrats! You made it to the end of the day without me dying. It's time for me to go to sleep now. Goodnight!</p>
-            <button id="congratsretry">retry</button>
+            <div class="overlaytext">
+                <p>Congrats! You made it to the end of the day without me dying. It's time for me to go to sleep now. Goodnight!</p>
+                <button id="btnretry">retry</button>
+            </div>
         </section>
+
+        <div id="background"></div>
 
     </main>
 </body>
