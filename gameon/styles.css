@@ -210,7 +210,10 @@ header h2 {
     transform: translate(497px, 37px);
 } 
 
-#start, #btnbfastyes, #btnbfastno, #btnbfastnext1,#btnbfastnext2, #attention, #essay, #btnattentionnext, #btnessaynext, #btnsoup, #btnrice, #btnsoupnext, #btnricenext, #btnlibrary, #btnhome, #btnlibrarynext, #btnhomenext, #btnwalk, #btnhw, #btnwalknext, #btnhwnext, #btnretry, #btndeadretry, #btnbar, #btnmovie, #btnbarnext, #btnmovienext, #btndeadretry {
+/* i could've just done button OOPS */
+/* #start, #btnbfastyes, #btnbfastno, #btnbfastnext1,#btnbfastnext2, #attention, #essay, #btnattentionnext, #btnessaynext, #btnsoup, #btnrice, #btnsoupnext, #btnricenext, #btnlibrary, #btnhome, #btnlibrarynext, #btnhomenext, #btnwalk, #btnhw, #btnwalknext, #btnhwnext, #btnretry, #btndeadretry, #btnbar, #btnmovie, #btnbarnext, #btnmovienext, #btndeadretry { */
+
+ button{
     font-family: "Libre Franklin", sans-serif;
     background-color:#E37137;
     color:white;
@@ -219,6 +222,15 @@ header h2 {
     font-weight: 400;
     border-radius: 30px;
     border-style: none;
+    transition: all 400ms ease;
+}
+
+button:hover {
+    background-color: #40282C;
+  }
+
+#start:hover {
+    background-color: #40282C;
 }
 
 #btnbfastyes{
@@ -463,3 +475,4 @@ header h2 {
     line-height: 23px;
     text-decoration: none;
   }
+
