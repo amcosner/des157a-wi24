@@ -1,6 +1,6 @@
 /* visualization styling */
 
-#visual {
+#visual, #report {
     background-image: url(images/background.png);
     max-width: 100%;
     height:750px;
@@ -9,7 +9,7 @@
 } 
 
 /* page spacing */
-#visual main {
+#visual main, #report main{
     display: block;
     /* margin: auto; */
     margin-left: 390px;
@@ -24,15 +24,21 @@
     padding-top: 0;
 }
 
+#report article {
+    margin-left: 3px;
+    margin-right: 45px;
+    padding-top: 0;
+}
+
 /* headings  */
-#visual header {
+#visual header, #report header {
     padding-top: 53px;
     padding-bottom: 40px;
     text-align: center;
     line-height: 1px;
 }
 
-#visual header h2 {
+#visual header h2, #report header h2 {
     color: #FFEDFF;
     font-size: 2em;
     margin: auto;
@@ -47,12 +53,30 @@
     line-height: 60px;
 }
 
-#visual h2, #visual h3 {
+#report h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 400;
+    color: #7DCE71;
+    font-size: 4.5em;
+    line-height: 80px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+}
+
+#visual h2, #visual h3, #report h2 {
     font-family: 'VT323', monospace;
     font-weight: 400;
     /* margin-left: 38px; */
     padding-top: 20px;
     line-height: 10px;
+}
+
+#report h3 {
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    /* margin-left: 38px; */
+    padding-top: 20px;
+    line-height: 25px;
 }
 
 #visual h2 {
@@ -66,6 +90,64 @@
     padding: 24px;
 }
 
+#report h2 {
+    color: #fefffe;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    border: 4px solid #7DCE71;
+    border-radius: 40px;
+    padding: 24px;
+}
+
+#rone {
+    margin-right: 177px;
+    margin-left: 174px;
+}
+
+#rtwo {
+    margin-right: 155px;
+    margin-left: 155px;
+}
+
+#rthree, #rtasks {
+    margin-right: 182px;
+    margin-left: 197px;
+}
+
+#rfour {
+    margin-right: 199px;
+    margin-left: 206px;
+}
+
+#rfive {
+    margin-right: 157px;
+    margin-left: 174px;
+    margin-bottom: 0px;
+}
+
+#rsix {
+    margin-right: 161px;
+    margin-left: 183px;
+}
+
+#rseven {
+    margin-right: 125px;
+    margin-left: 162px;
+}
+
+#outline ul {
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 20px 40px 20px 40px;
+}
+
+#future ul {
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-left: -2px;
+    padding: 60px 70px 40px 70px;
+}
+
 #three {
     margin-left: 90px;
     margin-right: 110px;
@@ -76,6 +158,23 @@
     margin-right: 104px;
 }
 
+#outline, #keyfindings, #users, #tasks, #bugs, #usability, #feedback {
+    margin-bottom: 80px;
+}
+
+#report img {
+    margin-top: 50px;
+    border-radius: 40px;
+}
+
+#imgone {
+    margin-bottom: -25px;
+}
+
+#imgtwo {
+    margin-bottom: 42px;
+}
+
 #startscreen, #deathscreen, #question {
     margin-bottom: 140px;
 }
@@ -84,7 +183,7 @@
     margin-right: 86px;
 } */
 
-#visual article h3 {
+#visual article h3, #report article h3 {
     font-size: 1.7em;
     color:#7DCE71;
     /* border: 2px solid #FEADFD;
@@ -94,7 +193,7 @@
 }
 
 /* main content of page */
-#visual article p {
+#visual article p, #report article p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #FFEDFF;
@@ -103,14 +202,26 @@
     margin-bottom: 20px;
 }
 
-#visual a {
+#report ul li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFEDFF;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+#understand {
+    line-height: 20px;
+}
+
+#visual a, #report a {
     text-decoration: none;
     color:#FEADFD;
     transition-timing-function: ease;
     transition: all 500ms;
 }
 
-#visual a:hover {
+#visual a:hover, #report a:hover {
     color: #7DCE71;
 }
 
@@ -121,7 +232,7 @@
     border-radius: 40px;
 }
 
-#visual footer {
+#visual footer, #report footer {
     text-align: center;
     color: #FEADFD;
     font-size: 0.8;
