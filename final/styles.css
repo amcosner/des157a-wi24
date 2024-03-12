@@ -30,6 +30,10 @@
     padding-top: 0;
 }
 
+#report main {
+    margin-left: 347px;
+}
+
 /* headings  */
 #visual header, #report header {
     padding-top: 53px;
@@ -101,38 +105,37 @@
 
 #rone {
     margin-right: 177px;
-    margin-left: 174px;
+    margin-left: 205px;
 }
 
 #rtwo {
-    margin-right: 155px;
-    margin-left: 155px;
+    margin-right: 178px;
+    margin-left: 180px;
 }
 
 #rthree, #rtasks {
-    margin-right: 182px;
-    margin-left: 197px;
+    margin-right: 209px;
+    margin-left: 218px;
 }
 
 #rfour {
-    margin-right: 199px;
-    margin-left: 206px;
+    margin-right: 218px;
+    margin-left: 223px;
 }
 
 #rfive {
-    margin-right: 157px;
-    margin-left: 174px;
-    margin-bottom: 0px;
+    margin-right: 164px;
+    margin-left: 197px;
 }
 
 #rsix {
-    margin-right: 161px;
-    margin-left: 183px;
+    margin-right: 186px;
+    margin-left: 196px;
 }
 
 #rseven {
-    margin-right: 125px;
-    margin-left: 162px;
+    margin-right: 154px;
+    margin-left: 172px;
 }
 
 #outline ul {
