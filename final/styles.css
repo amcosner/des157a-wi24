@@ -235,11 +235,25 @@
     border-radius: 40px;
 }
 
-#visual footer, #report footer {
+#visual footer{
     text-align: center;
     color: #FEADFD;
     font-size: 0.8;
     font-family: 'VT323', monospace;
     font-weight: 400;
     padding: 50px;
+}
+
+#report footer {
+    text-align: center;
+    color: #FEADFD;
+    font-size: 0.8;
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    padding: 50px;
+    margin-left: 63px;
+}
+
+#end {
+    margin-left: 31px;
 }
