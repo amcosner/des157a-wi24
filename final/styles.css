@@ -46,7 +46,7 @@
 
 /* visualization styling */
 
-body {
+#visual {
     background-image: url(images/background.png);
     max-width: 100%;
     height:750px;
@@ -55,7 +55,7 @@ body {
 } 
 
 /* page spacing */
-main {
+#visual main {
     display: block;
     /* margin: auto; */
     margin-left: 390px;
@@ -65,27 +65,27 @@ main {
 }
 
 
-article {
+#visual article {
     padding-right: 100px;
     padding-top: 0;
 }
 
 /* headings  */
-header {
+#visual header {
     padding-top: 53px;
     padding-bottom: 40px;
     text-align: center;
     line-height: 1px;
 }
 
-header h2 {
+#visual header h2 {
     color: #FFEDFF;
     font-size: 2em;
     margin: auto;
     border: none;
 }
 
-h1 {
+#visual h1 {
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: 400;
     color: #7DCE71;
@@ -93,7 +93,7 @@ h1 {
     line-height: 60px;
 }
 
-h2, h3 {
+#visual h2, #visual h3 {
     font-family: 'VT323', monospace;
     font-weight: 400;
     /* margin-left: 38px; */
@@ -101,7 +101,7 @@ h2, h3 {
     line-height: 10px;
 }
 
-h2 {
+#visual h2 {
     color: #fefffe;
     font-size: 2.2em;
     margin-left: 100px;
@@ -130,7 +130,7 @@ h2 {
     margin-right: 86px;
 } */
 
-article h3 {
+#visual article h3 {
     font-size: 1.7em;
     color:#7DCE71;
     /* border: 2px solid #FEADFD;
@@ -140,7 +140,7 @@ article h3 {
 }
 
 /* main content of page */
-article p {
+#visual article p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #FFEDFF;
@@ -149,25 +149,25 @@ article p {
     margin-bottom: 20px;
 }
 
-a {
+#visual a {
     text-decoration: none;
     color:#FEADFD;
     transition-timing-function: ease;
     transition: all 500ms;
 }
 
-a:hover {
+#visual a:hover {
     color: #7DCE71;
 }
 
-img {
+#visual img {
     margin-left: -52px;
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 40px;
 }
 
-footer {
+#visual footer {
     text-align: center;
     color: #FEADFD;
     font-size: 0.8;
