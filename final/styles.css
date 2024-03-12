@@ -1,4 +1,6 @@
-body {
+/* creative brief styling */
+
+#brief {
     margin:auto;
     margin-left: 390px;
     margin-right: 340px;
@@ -6,7 +8,7 @@ body {
     background-color: #C9DBBE;
 }
 
-h1 {
+#brief h1 {
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-weight: 400;
@@ -17,7 +19,7 @@ h1 {
     margin-top: 30px;
 }
 
-h2 {
+#brief h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -26,7 +28,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-p {
+#brief p {
     font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -35,16 +37,141 @@ p {
     margin-bottom: 50px;
 }
 
-article {
+#brief article {
     background-color: white;
     border-radius: 30px;
     padding: 30px;
     margin-bottom: 40px;
 }
 
-/* main {
-    background-color: white;
-    border-radius: 30px;
-    padding: 40px;
+/* visualization styling */
+
+body {
+    background-image: url(images/background.png);
+    max-width: 100%;
+    height:750px;
+    width:1200px;
+    margin: auto;
+} 
+
+/* page spacing */
+main {
+    display: block;
+    /* margin: auto; */
+    margin-left: 390px;
+    margin-right: 250px;
+    /* padding-left: 400px;
+    padding-right: 100px; */
+}
+
+
+article {
+    padding-right: 100px;
+    padding-top: 0;
+}
+
+/* headings  */
+header {
+    padding-top: 53px;
+    padding-bottom: 40px;
+    text-align: center;
+    line-height: 1px;
+}
+
+header h2 {
+    color: #FFEDFF;
+    font-size: 2em;
+    margin: auto;
+    border: none;
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 400;
+    color: #7DCE71;
+    font-size: 4.5em;
+    line-height: 60px;
+}
+
+h2, h3 {
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    /* margin-left: 38px; */
+    padding-top: 20px;
+    line-height: 10px;
+}
+
+h2 {
+    color: #fefffe;
+    font-size: 2.2em;
+    margin-left: 100px;
+    margin-right: 131px;
+    margin-bottom: 15px;
+    border: 4px solid #7DCE71;
+    border-radius: 40px;
+    padding: 24px;
+}
+
+#three {
+    margin-left: 100px;
+    margin-right: 110px;
+}
+
+#four {
+    margin-left: 90px;
+    margin-right: 100px;
+}
+
+#startscreen, #deathscreen, #question {
+    margin-bottom: 140px;
+}
+
+/* #four {
+    margin-right: 86px;
 } */
-      
+
+article h3 {
+    font-size: 1.7em;
+    color:#7DCE71;
+    /* border: 2px solid #FEADFD;
+    border-radius: 40px;
+    padding: 15px; */
+    /* margin-right: 410px; */
+}
+
+/* main content of page */
+article p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFEDFF;
+    font-size: 0.9em;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color:#FEADFD;
+    transition-timing-function: ease;
+    transition: all 500ms;
+}
+
+a:hover {
+    color: #7DCE71;
+}
+
+img {
+    margin-left: -52px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+footer {
+    text-align: center;
+    color: #FEADFD;
+    font-size: 0.8;
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    padding: 50px;
+}
