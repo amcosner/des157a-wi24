@@ -1,0 +1,45 @@
+/* creative brief styling */
+
+#brief {
+    margin:auto;
+    margin-left: 390px;
+    margin-right: 340px;
+    margin-bottom: 20px;
+    background-color: #C9DBBE;
+}
+
+#brief h1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+#brief h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#brief p {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+    margin-bottom: 50px;
+}
+
+#brief article {
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
