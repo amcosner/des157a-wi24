@@ -269,6 +269,14 @@ button:hover {
     transform:translate(517px, 7px);
 }
 
+#btnramen {
+    transform:translate(517px, 7px);
+}
+
+#btndelivery {
+    transform:translate(517px, 7px);
+}
+
 #btnmovie{
     transform: translate(449px, 7px);
 }
