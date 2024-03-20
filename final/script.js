@@ -125,6 +125,7 @@
         document.querySelector('#deadcharacter').className="hidden";
         document.querySelector('#startoverlay').className="showing";
         document.querySelector('#smallcharacter').className="hidden";
+        document.querySelector('#progress').className="hidden";
         document.querySelector('#background2').className="hidden";
     });
 
@@ -608,8 +609,7 @@
         //next overlay
         document.querySelector('#congrats').className="hidden";
         document.querySelector('#startoverlay').className="showing";
-        document.querySelector('#smallcharacter').className="hidden";
-        document.querySelector('#background2').className="hidden";
+        document.querySelector('#eepy').className="hidden";
         document.querySelector('#progress').className = "hidden"
     });
 
