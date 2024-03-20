@@ -225,6 +225,30 @@ header h2 {
     transition: all 400ms ease;
 }
 
+#musicsourcesdiv button, #sources #home{
+    font-family: "Libre Franklin", sans-serif;
+    background-color: #A8D9B3;
+    font-size: 1em;
+    padding: 10px 20px 10px 20px;
+    font-weight: 400;
+    border-radius: 30px;
+    border-style: none;
+    transition: all 400ms ease;
+}
+
+#home {
+    transform: translate(104px, 71px);
+}
+
+#sources #home a {
+    color:#40282C;
+}
+
+#musicsourcesdiv button:hover, #sources #home:hover {
+    background-color: #72C698;
+}
+
+
 #btnretry {
     transform: translate(-254px, -421px);
 }
@@ -462,7 +486,7 @@ button:hover {
   #text {
     margin-left: -112px;
     margin-right: 127px;
-    margin-top: -130px;
+    margin-top: -68px;
   }
 
   #eepy img {
@@ -486,12 +510,13 @@ button:hover {
     color:#E37137;
   }
 
-  /* #container {
+  #container {
     background-image: url(images/overlay1.png);
+    background-size: 700px 800px;
     background-repeat: no-repeat;
     margin-left: 259px;
     padding: 200px;
-  } */
+  }
 
   #musicsourcesdiv {
     /* transform:translate(1060px, 488px); */
@@ -503,7 +528,7 @@ button:hover {
 
   #musicsourcesdiv a{
     font-family: "Libre Franklin", sans-serif;
-    color: white;
+    color: #40282C;
     font-weight: 400;
     font-size: 1em;
     line-height: 23px;
