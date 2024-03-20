@@ -13,6 +13,7 @@
     const btnnoise = new Audio('sounds/button.mp3');
     const gameOver =  new Audio('sounds/gameover.mp3');
     const congrats =  new Audio('sounds/congrats.mp3');
+    const snoring =  new Audio('sounds/snoring.mp3');
     let health = gameData.health;
 
     // functions
@@ -561,7 +562,7 @@
         document.querySelector('#hangoutmovie').className="hidden";
         document.querySelector('#congrats').className="showing";
         document.querySelector('#smallcharacter').className="showing, yippee";
-        congrats()
+        congrats.play()
     });
 
     document.querySelector('#btnbarnext').addEventListener('click', function(event){
@@ -574,7 +575,7 @@
             document.querySelector('#smallcharacter').className="showing, yippee";
             document.querySelector('#hangoutbar').className="hidden";
             document.querySelector('#congrats').className="showing";
-            congrats()
+            congrats.play()
             // document.querySelector('#background2').className="showing";
         } else if (health == 0) {
             //play gameover sound
@@ -592,4 +593,17 @@
         document.querySelector('#smallcharacter').className="hidden";
         document.querySelector('#background2').className="hidden";
     });
+
+    // triggering sleep overlay
+    document.querySelector('#btncongratsnext').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        document.querySelector('#congrats').className="hidden";
+        document.querySelector('#background2').className="hidden";
+        document.querySelector('#smallcharacter').className="hidden";
+        document.querySelector('#health').className="hidden";
+        document.querySelector('#eepy').className="showing";
+        snoring.play()
+    });
+
 })();

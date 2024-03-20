@@ -179,7 +179,7 @@ header h2 {
     margin-top: 76px;
 } */
 
-#bfast p, #bfastyes p, #bfastno p, #payattention p, #writeessay p, #lunch p, #lunchsoup p, #lunchrice p, #work p, #worklibrary p, #workhome p, #freetime p, #freetimewalk p, #freetimehw p, #congrats p, #hangout p, #youdied p, #class p, #hangoutmovie p, #hangoutbar p, #shift p, #shiftyes p, #shiftno p, #dinner p, #dinnerramen p, #dinnerdelivery p, #animal p, #animalcat p, #animalhorse p {
+#bfast p, #bfastyes p, #bfastno p, #payattention p, #writeessay p, #lunch p, #lunchsoup p, #lunchrice p, #work p, #worklibrary p, #workhome p, #freetime p, #freetimewalk p, #freetimehw p, #congrats p, #hangout p, #youdied p, #class p, #hangoutmovie p, #hangoutbar p, #shift p, #shiftyes p, #shiftno p, #dinner p, #dinnerramen p, #dinnerdelivery p, #animal p, #animalcat p, #animalhorse p, #eepy p{
     font-family: "Libre Franklin", sans-serif;
     font-size: 1.2em;
     z-index: 5;
@@ -223,6 +223,10 @@ header h2 {
     border-radius: 30px;
     border-style: none;
     transition: all 400ms ease;
+}
+
+#btnretry {
+    transform: translate(-254px, -421px);
 }
 
 button:hover {
@@ -270,22 +274,32 @@ button:hover {
 }
 
 #btnramen {
-    transform:translate(517px, 7px);
+    transform:translate(415px, 7px);
 }
 
 #btndelivery {
-    transform:translate(517px, 7px);
+    transform: translate(435px, 7px);
+}
+
+#btncat {
+    transform:translate(423px, 7px);
+}
+
+#btnhorse {
+    transform: translate(484px, 7px);
 }
 
 #btnmovie{
-    transform: translate(449px, 7px);
+    transform: translate(449px, -5px);
 }
 
-#essay, #btnrice, #btnbar {
+#btnbar {transform:translate(407px, -5px);}
+
+#essay, #btnrice {
     transform:translate(407px, 7px);
 }
 
-#btnbfastnext1, #btnbfastnext2, #retry, #btnattentionnext, #btnessaynext, #btnsoupnext, #btnricenext, #btnlibrarynext, #btnhomenext, #btnwalknext, #btnhwnext, #btnretry, #btnbarnext, #btnmovienext, #btndeadretry, #btnshiftynext, #btnshiftnnext, #btnramennext, #btndeliverynext, #btncatnext, #btnhorsenext{
+#btnbfastnext1, #btnbfastnext2, #retry, #btnattentionnext, #btnessaynext, #btnsoupnext, #btnricenext, #btnlibrarynext, #btnhomenext, #btnwalknext, #btnhwnext, #btnretry, #btnbarnext, #btnmovienext, #btndeadretry, #btnshiftynext, #btnshiftnnext, #btnramennext, #btndeliverynext, #btncatnext, #btnhorsenext, #btncongratsnext{
     transform: translate(513px, 7px);
 }
 
@@ -449,6 +463,10 @@ button:hover {
     margin-left: -112px;
     margin-right: 127px;
     margin-top: -130px;
+  }
+
+  #eepy img {
+    margin-left: 133px;
   }
 
 
