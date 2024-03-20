@@ -12,6 +12,7 @@
     // noises + variables
     const btnnoise = new Audio('sounds/button.mp3');
     const gameOver =  new Audio('sounds/gameover.mp3');
+    const congrats =  new Audio('sounds/congrats.mp3');
     let health = gameData.health;
 
     // functions
@@ -325,7 +326,7 @@
         adjustHealth()
     });
 
-    // triggering last question (hangout)
+    // triggering last question (shift)
     document.querySelector('#btnhwnext').addEventListener('click', function(event){
         // playing noise
         btnnoise.play()
@@ -335,7 +336,7 @@
         if (health > 0){
             resetAnimation()
             document.querySelector('#freetimehw').className="hidden";
-            document.querySelector('#hangout').className="showing";
+            document.querySelector('#shift').className="showing";
         } else if (health == 0) {
             //play gameover sound
             gameOver.play()
@@ -351,6 +352,174 @@
         //next overlay
         resetAnimation()
         document.querySelector('#freetimewalk').className="hidden";
+        document.querySelector('#shift').className="showing";
+        adjustHealth()
+    });
+
+    // if yeah 
+    document.querySelector('#btnshiftyes').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        document.querySelector('#shift').className="hidden";
+        document.querySelector('#shiftyes').className="showing";
+        document.querySelector('#smallcharacter').className="showing, zap";
+        health = health + 60
+        healthInteger()
+        adjustHealth()
+    });
+
+    // if no
+    document.querySelector('#btnshiftno').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        document.querySelector('#shift').className="hidden";
+        document.querySelector('#shiftno').className="showing";
+        document.querySelector('#smallcharacter').className="showing, zap";
+        health = health - 60
+        healthInteger()
+        adjustHealth()
+    });
+
+    // triggering next question (dinner)
+    document.querySelector('#btnshiftnnext').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        healthInteger()
+        // if health exists --> continue, if not --> death overlay
+        if (health > 0){
+            resetAnimation()
+            document.querySelector('#shiftno').className="hidden";
+            document.querySelector('#dinner').className="showing";
+        } else if (health == 0) {
+            //play gameover sound
+            gameOver.play()
+            document.querySelector('#shiftno').className="hidden";
+            deathScreen()
+        }
+        adjustHealth()
+    });
+
+    document.querySelector('#btnshiftynext').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        resetAnimation()
+        document.querySelector('#shiftyes').className="hidden";
+        document.querySelector('#dinner').className="showing";
+        adjustHealth()
+    });
+
+    // if you cook 
+    document.querySelector('#btnramen').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        document.querySelector('#dinner').className="hidden";
+        document.querySelector('#dinnerramen').className="showing";
+        document.querySelector('#smallcharacter').className="showing, zap";
+        health = health - 30
+        healthInteger()
+        adjustHealth()
+    });
+
+    // if you get delivery
+    document.querySelector('#btndelivery').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        document.querySelector('#dinner').className="hidden";
+        document.querySelector('#dinnerdelivery').className="showing";
+        document.querySelector('#smallcharacter').className="showing, zap";
+        health = health + 30
+        healthInteger()
+        adjustHealth()
+    });
+
+    // triggering next question (animal)
+    document.querySelector('#btndeliverynext').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        healthInteger()
+        // if health exists --> continue, if not --> death overlay
+        if (health > 0){
+            resetAnimation()
+            document.querySelector('#dinnerdelivery').className="hidden";
+            document.querySelector('#animal').className="showing";
+        } else if (health == 0) {
+            //play gameover sound
+            gameOver.play()
+            document.querySelector('#dinnerdelivery').className="hidden";
+            deathScreen()
+        }
+        adjustHealth()
+    });
+
+    document.querySelector('#btnramennext').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        resetAnimation()
+        document.querySelector('#dinnerramen').className="hidden";
+        document.querySelector('#animal').className="showing";
+        adjustHealth()
+    });
+
+    // if cat
+    document.querySelector('#btncat').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        document.querySelector('#animal').className="hidden";
+        document.querySelector('#animalcat').className="showing";
+        document.querySelector('#smallcharacter').className="showing, zap";
+        health = health - 50
+        healthInteger()
+        adjustHealth()
+    });
+
+    // if you get delivery
+    document.querySelector('#btnhorse').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        document.querySelector('#animal').className="hidden";
+        document.querySelector('#animalhorse').className="showing";
+        document.querySelector('#smallcharacter').className="showing, zap";
+        health = health + 50
+        healthInteger()
+        adjustHealth()
+    });
+
+    // triggering next question (hangout)
+    document.querySelector('#btncatnext').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        healthInteger()
+        // if health exists --> continue, if not --> death overlay
+        if (health > 0){
+            resetAnimation()
+            document.querySelector('#animalcat').className="hidden";
+            document.querySelector('#hangout').className="showing";
+        } else if (health == 0) {
+            //play gameover sound
+            gameOver.play()
+            document.querySelector('#animalcat').className="hidden";
+            deathScreen()
+        }
+        adjustHealth()
+    });
+
+    document.querySelector('#btnhorsenext').addEventListener('click', function(event){
+        // playing noise
+        btnnoise.play()
+        //next overlay
+        resetAnimation()
+        document.querySelector('#animalhorse').className="hidden";
         document.querySelector('#hangout').className="showing";
         adjustHealth()
     });
@@ -391,7 +560,8 @@
         healthInteger()
         document.querySelector('#hangoutmovie').className="hidden";
         document.querySelector('#congrats').className="showing";
-         document.querySelector('#smallcharacter').className="showing, yippee";
+        document.querySelector('#smallcharacter').className="showing, yippee";
+        congrats()
     });
 
     document.querySelector('#btnbarnext').addEventListener('click', function(event){
@@ -404,6 +574,7 @@
             document.querySelector('#smallcharacter').className="showing, yippee";
             document.querySelector('#hangoutbar').className="hidden";
             document.querySelector('#congrats').className="showing";
+            congrats()
             // document.querySelector('#background2').className="showing";
         } else if (health == 0) {
             //play gameover sound

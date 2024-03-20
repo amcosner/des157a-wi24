@@ -135,7 +135,7 @@ header h2 {
     transform: translate(450px, -79px);
 }
 
-#bfast, #bfastyes, #bfastno, #payattention, #writeessay, #lunch, #lunchsoup, #lunchrice, #work, #worklibrary, #workhome, #freetime, #freetimewalk, #freetimehw, #congrats, #hangout, #hangoutmovie, #hangoutbar{
+#bfast, #bfastyes, #bfastno, #payattention, #writeessay, #lunch, #lunchsoup, #lunchrice, #work, #worklibrary, #workhome, #freetime, #freetimewalk, #freetimehw, #congrats, #hangout, #hangoutmovie, #hangoutbar, #shift, #shiftyes, #shiftno, #dinner, #dinnerramen, #dinnerdelivery, #animal, #animalcat, #animalhorse {
     /* background-image: url(images/overlay2.png);
     background-repeat: no-repeat; */
     /* background-size: 43%; */
@@ -179,7 +179,7 @@ header h2 {
     margin-top: 76px;
 } */
 
-#bfast p, #bfastyes p, #bfastno p, #payattention p, #writeessay p, #lunch p, #lunchsoup p, #lunchrice p, #work p, #worklibrary p, #workhome p, #freetime p, #freetimewalk p, #freetimehw p, #congrats p, #hangout p, #youdied p, #class p, #hangoutmovie p, #hangoutbar p {
+#bfast p, #bfastyes p, #bfastno p, #payattention p, #writeessay p, #lunch p, #lunchsoup p, #lunchrice p, #work p, #worklibrary p, #workhome p, #freetime p, #freetimewalk p, #freetimehw p, #congrats p, #hangout p, #youdied p, #class p, #hangoutmovie p, #hangoutbar p, #shift p, #shiftyes p, #shiftno p, #dinner p, #dinnerramen p, #dinnerdelivery p, #animal p, #animalcat p, #animalhorse p {
     font-family: "Libre Franklin", sans-serif;
     font-size: 1.2em;
     z-index: 5;
@@ -261,6 +261,14 @@ button:hover {
     transform:translate(381px, 7px);
 }
 
+#btnshiftno{
+    transform: translate(449px, 7px);;
+}
+
+#btnshiftyes{
+    transform:translate(517px, 7px);
+}
+
 #btnmovie{
     transform: translate(449px, 7px);
 }
@@ -269,7 +277,7 @@ button:hover {
     transform:translate(407px, 7px);
 }
 
-#btnbfastnext1, #btnbfastnext2, #retry, #btnattentionnext, #btnessaynext, #btnsoupnext, #btnricenext, #btnlibrarynext, #btnhomenext, #btnwalknext, #btnhwnext, #btnretry, #btnbarnext, #btnmovienext, #btndeadretry {
+#btnbfastnext1, #btnbfastnext2, #retry, #btnattentionnext, #btnessaynext, #btnsoupnext, #btnricenext, #btnlibrarynext, #btnhomenext, #btnwalknext, #btnhwnext, #btnretry, #btnbarnext, #btnmovienext, #btndeadretry, #btnshiftynext, #btnshiftnnext, #btnramennext, #btndeliverynext, #btncatnext, #btnhorsenext{
     transform: translate(513px, 7px);
 }
 
@@ -452,12 +460,12 @@ button:hover {
     color:#E37137;
   }
 
-  #container {
+  /* #container {
     background-image: url(images/overlay1.png);
     background-repeat: no-repeat;
     margin-left: 259px;
     padding: 200px;
-  }
+  } */
 
   #musicsourcesdiv {
     /* transform:translate(1060px, 488px); */

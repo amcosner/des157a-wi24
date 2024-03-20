@@ -22,6 +22,10 @@
         <h2>will we survive<br> minor inconveniences?</h2>
     </header>
 
+    <audio controls autoplay loop hidden>
+        <source src="sounds/backgroundmusic.mp3" type="audio/mp3">
+    </audio>
+
     <main>
         <!-- <div id="bigImage" class="hidden">
             <img src="images/bigCharacter.png" alt="illustration of the main character (person with green hair, a plaid shirt, dark jeans, and a bunny hat)" width="612" height="736">
@@ -30,7 +34,7 @@
         <div id="startoverlay" class="showing">
             <img id="bigCharacter" src="images/bigCharacter.png" alt="illustration of the main character (person with green hair, a plaid shirt, dark jeans, and a bunny hat)" width="612" height="736">
             <!-- <img id="clock" src="images/clock.png" alt="mini alarm clock with a smiley face on it" width="169" height="115"> -->
-            <p>Hello, I'm Moss, a fellow college student! Please help me make decisions today. Your goal is simple: to get me through the day with as much health  left as possible. I'm counting on you! </p>
+            <p>Hello, I'm Moss, a fellow college student! Please help me make decisions today. Your goal is simple: to get me through the day with as much health  left as possible. Different choices will cause different amounts of damage. I'm counting on you! </p>
             <button id="start">start game!</button>
         </div>
 
@@ -176,9 +180,75 @@
             </div>
         </section>
 
+        <section id="shift" class="hidden">
+            <div class="overlaytext">
+                <p>Oh no, my manager just asked me to come in right now. I'm tired from today, but I also want money. Should I pick up the shift?</p>
+                <button id="btnshiftno">no</button>
+                <button id="btnshiftyes">yes</button>
+            </div>
+        </section>
+
+        <section id="shiftyes" class="hidden">
+            <div class="overlaytext">
+                <p>I'm a little tired, but YIPPEE! Now I have some extra money for the week!</p>
+                <button id="btnshiftynext">next</button>
+            </div>
+        </section>
+
+        <section id="shiftno" class="hidden">
+            <div class="overlaytext">
+                <p>I'm regretting that...I really needed the money.</p>
+                <button id="btnshiftnnext">next</button>
+            </div>
+        </section>
+
+        <section id="dinner" class="hidden">
+            <div class="overlaytext">
+                <p>I'm hungry again, time for dinner! Should I try to cook something quick, or should I take the L and order delivery?</p>
+                <button id="btnramen">cook ramen</button>
+                <button id="btndelivery">delivery</button>
+            </div>
+        </section>
+
+        <section id="dinnerramen" class="hidden">
+            <div class="overlaytext">
+                <p>I don't know how I managed it, but the ramen caught on fire and my house burned down.</p>
+                <button id="btnramennext">next</button>
+            </div>
+        </section>
+
+        <section id="dinnerdelivery" class="hidden">
+            <div class="overlaytext">
+                <p>Crying at my bank account a little, but at least I got a yummy meal out of it and saved energy at the same time!</p>
+                <button id="btndeliverynext">next</button>
+            </div>
+        </section>
+
+        <section id="animal" class="hidden">
+            <div class="overlaytext">
+                <p>Hmm, this game is too easy. Pick an animal!</p>
+                <button id="btncat">cat</button>
+                <button id="btnhorse">horse</button>
+            </div>
+        </section>
+
+        <section id="animalcat" class="hidden">
+            <div class="overlaytext">
+                <p>HAHA. I fooled you with my hat, but I'm actually more of a horsegirl.</p>
+                <button id="btncatnext">next</button>
+            </div>
+        </section>
+
+        <section id="animalhorse" class="hidden">
+            <div class="overlaytext">
+                <p>Horses are my favorite! They're so silly.</p>
+                <button id="btnhorsenext">next</button>
+            </div>
+        </section>
+
         <section id="hangout" class="hidden">
             <div class="overlaytext">
-                <p>I'm feeling lonely now and want to hang out with some friends. Should we go get drinks or should we have a chill movie night at home?</p>
+                <p>I'm feeling lonely now and want to hang out with some friends to do something fun. Should we go get drinks or should we have an at home movie night?</p>
                 <button id="btnbar">drinks</button>
                 <button id="btnmovie">movie night</button>
             </div>
@@ -201,12 +271,19 @@
         <section id="congrats" class="hidden">
             <div class="overlaytext">
                 <p>Congrats! You made it to the end of the day without me dying. It's time for me to go to sleep now. Goodnight!</p>
+                <button id="btncongratsnext">next</button>
+            </div>
+        </section>
+
+        <section id="eepy" class="hidden">
+            <div class="overlaytext">
+                <img src="">
                 <button id="btnretry">retry</button>
             </div>
         </section>
+
         <div id="musicsourcesdiv" class="showing"><a id="musicsources" href="sources.html">sources</a></div>
         <!-- <div id="background"></div> -->
-
-    </main>
+    </main>   
 </body>
 </html>
