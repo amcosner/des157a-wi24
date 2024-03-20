@@ -236,8 +236,54 @@ header h2 {
     transition: all 400ms ease;
 }
 
+#progressbar {
+    z-index: 1;
+    transform: translate(568px, -26px);
+}
+
+#circles {
+    position: relative;
+    z-index: 5;
+}
+
+#c1{
+    transform: translate(570px, 3px);
+}
+
+#c2{
+    transform: translate(588px, 3px);
+}
+
+#c3{
+    transform: translate(605px, 3px);
+}
+
+#c4{
+    transform: translate(621px, 3px);
+}
+
+#c5 {
+    transform: translate(638px, 3px);
+}
+
+#c6 {
+    transform: translate(653px, 3px);
+}
+
+#c7 {
+    transform: translate(667px, 3px);
+}
+
+#c8 {
+    transform: translate(681px, 3px);
+}
+
+#c9 {
+    transform: translate(697px, 3px);
+}
+
 #home {
-    transform: translate(104px, 71px);
+    transform: translate(104px, 3px);
 }
 
 #sources #home a {
@@ -250,7 +296,7 @@ header h2 {
 
 
 #btnretry {
-    transform: translate(-254px, -421px);
+    transform: translate(-256px, -426px);
 }
 
 button:hover {
@@ -323,7 +369,7 @@ button:hover {
     transform:translate(407px, 7px);
 }
 
-#btnbfastnext1, #btnbfastnext2, #retry, #btnattentionnext, #btnessaynext, #btnsoupnext, #btnricenext, #btnlibrarynext, #btnhomenext, #btnwalknext, #btnhwnext, #btnretry, #btnbarnext, #btnmovienext, #btndeadretry, #btnshiftynext, #btnshiftnnext, #btnramennext, #btndeliverynext, #btncatnext, #btnhorsenext, #btncongratsnext{
+#btnbfastnext1, #btnbfastnext2, #retry, #btnattentionnext, #btnessaynext, #btnsoupnext, #btnricenext, #btnlibrarynext, #btnhomenext, #btnwalknext, #btnhwnext, #btnbarnext, #btnmovienext, #btndeadretry, #btnshiftynext, #btnshiftnnext, #btnramennext, #btndeliverynext, #btncatnext, #btnhorsenext, #btncongratsnext{
     transform: translate(513px, 7px);
 }
 
@@ -493,6 +539,13 @@ button:hover {
     margin-left: 133px;
   }
 
+  #progress p {
+    font-family: "Libre Franklin", sans-serif;
+    transform: translate(705px, -21px);
+    color: black;
+    font-weight: 400;
+    font-size: 1.2em;
+  }
 
   #sources p {
     font-family: "Libre Franklin", sans-serif;

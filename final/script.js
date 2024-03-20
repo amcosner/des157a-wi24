@@ -55,6 +55,7 @@
         document.querySelector('#background2').className="showing";
         document.querySelector('#smallcharacter').className="showing";
         document.querySelector('#health').className="showing";
+        document.querySelector('#progress').className="showing";
         // starting health at 80
         health = 80
         adjustHealth()
@@ -100,6 +101,7 @@
         resetAnimation()
         document.querySelector('#bfastyes').className="hidden";
         document.querySelector('#class').className="showing";
+        document.querySelector('#c1').className="showing";
     });
 
     document.querySelector('#btnbfastnext2').addEventListener('click', function(event){
@@ -165,6 +167,7 @@
         resetAnimation()
         document.querySelector('#writeessay').className="hidden";
         document.querySelector('#lunch').className="showing";
+        document.querySelector('#c2').className="showing";
     });
 
     document.querySelector('#btnattentionnext').addEventListener('click', function(event){
@@ -176,6 +179,7 @@
         if (health > 0){
             document.querySelector('#payattention').className="hidden";
             document.querySelector('#lunch').className="showing";
+            document.querySelector('#c2').className="showing";
             resetAnimation()
         } else if (health == 0) {
             //play gameover sound
@@ -223,6 +227,7 @@
         resetAnimation()
         document.querySelector('#lunchrice').className="hidden";
         document.querySelector('#work').className="showing";
+        document.querySelector('#c3').className="showing";
     });
 
     document.querySelector('#btnsoupnext').addEventListener('click', function(event){
@@ -234,6 +239,7 @@
         if (health > 0){
             document.querySelector('#lunchsoup').className="hidden";
             document.querySelector('#work').className="showing";
+            document.querySelector('#c3').className="showing";
             resetAnimation()
         } else if (health == 0) {
             //play gameover sound
@@ -282,6 +288,7 @@
             resetAnimation()
             document.querySelector('#workhome').className="hidden";
             document.querySelector('#freetime').className="showing";
+            document.querySelector('#c4').className="showing";
         } else if (health == 0) {
             //play gameover sound
             gameOver.play()
@@ -297,6 +304,7 @@
         resetAnimation()
         document.querySelector('#worklibrary').className="hidden";
         document.querySelector('#freetime').className="showing";
+        document.querySelector('#c4').className="showing";
     });
 
     // if walk
@@ -338,6 +346,7 @@
             resetAnimation()
             document.querySelector('#freetimehw').className="hidden";
             document.querySelector('#shift').className="showing";
+            document.querySelector('#c5').className="showing";
         } else if (health == 0) {
             //play gameover sound
             gameOver.play()
@@ -354,6 +363,7 @@
         resetAnimation()
         document.querySelector('#freetimewalk').className="hidden";
         document.querySelector('#shift').className="showing";
+        document.querySelector('#c5').className="showing";
         adjustHealth()
     });
 
@@ -394,6 +404,7 @@
             resetAnimation()
             document.querySelector('#shiftno').className="hidden";
             document.querySelector('#dinner').className="showing";
+            document.querySelector('#c6').className="showing";
         } else if (health == 0) {
             //play gameover sound
             gameOver.play()
@@ -410,6 +421,7 @@
         resetAnimation()
         document.querySelector('#shiftyes').className="hidden";
         document.querySelector('#dinner').className="showing";
+        document.querySelector('#c6').className="showing";
         adjustHealth()
     });
 
@@ -450,6 +462,7 @@
             resetAnimation()
             document.querySelector('#dinnerdelivery').className="hidden";
             document.querySelector('#animal').className="showing";
+            document.querySelector('#c7').className="showing";
         } else if (health == 0) {
             //play gameover sound
             gameOver.play()
@@ -466,6 +479,7 @@
         resetAnimation()
         document.querySelector('#dinnerramen').className="hidden";
         document.querySelector('#animal').className="showing";
+        document.querySelector('#c7').className="showing";
         adjustHealth()
     });
 
@@ -506,6 +520,7 @@
             resetAnimation()
             document.querySelector('#animalcat').className="hidden";
             document.querySelector('#hangout').className="showing";
+            document.querySelector('#c8').className="showing";
         } else if (health == 0) {
             //play gameover sound
             gameOver.play()
@@ -522,6 +537,7 @@
         resetAnimation()
         document.querySelector('#animalhorse').className="hidden";
         document.querySelector('#hangout').className="showing";
+        document.querySelector('#c8').className="showing";
         adjustHealth()
     });
 
@@ -562,6 +578,7 @@
         document.querySelector('#hangoutmovie').className="hidden";
         document.querySelector('#congrats').className="showing";
         document.querySelector('#smallcharacter').className="showing, yippee";
+        document.querySelector('#c9').className="showing";
         congrats.play()
     });
 
@@ -575,6 +592,7 @@
             document.querySelector('#smallcharacter').className="showing, yippee";
             document.querySelector('#hangoutbar').className="hidden";
             document.querySelector('#congrats').className="showing";
+            document.querySelector('#c9').className="showing";
             congrats.play()
             // document.querySelector('#background2').className="showing";
         } else if (health == 0) {
@@ -592,6 +610,7 @@
         document.querySelector('#startoverlay').className="showing";
         document.querySelector('#smallcharacter').className="hidden";
         document.querySelector('#background2').className="hidden";
+        document.querySelector('#progress').className = "hidden"
     });
 
     // triggering sleep overlay
@@ -602,6 +621,7 @@
         document.querySelector('#background2').className="hidden";
         document.querySelector('#smallcharacter').className="hidden";
         document.querySelector('#health').className="hidden";
+        document.querySelector('#progress').className = "hidden"
         document.querySelector('#eepy').className="showing";
         snoring.play()
     });
